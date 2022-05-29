@@ -8,8 +8,6 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:vario/domain/models/investment_item/backend/stock_chart_model.dart';
 import 'package:vario/domain/models/investment_item/backend/stock_chart_model_chart.dart';
 import 'package:vario/presentation/core/widgets/stock_performance_chart/cubit/dummy_data.dart';
-
-import '../../../../../domain/models/currency.dart';
 import '../util/axis_generation.dart';
 import '../util/chart_exceptions.dart';
 import '../util/chart_period_model.dart';

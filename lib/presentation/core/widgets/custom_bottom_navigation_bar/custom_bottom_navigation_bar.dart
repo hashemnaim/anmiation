@@ -1,7 +1,4 @@
 import 'package:flutter/material.dart';
-
-import '../../../../locator.dart';
-import '../../../routing/navigation_service.dart';
 import '../../theme/my_colors.dart';
 import '../flushbar.dart';
 import '../svg.dart';

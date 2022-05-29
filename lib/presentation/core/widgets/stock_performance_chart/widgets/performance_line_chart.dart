@@ -80,7 +80,6 @@ class PerformanceLineChart extends StatelessWidget {
                       ? ((maxY - minY) / 4)
                       : null,
                   showTitles: true,
-                  //TODO: check if right style
                   getTextStyles: (_, __) => MyStyles.normalText10),
             ),
             borderData: FlBorderData(show: false),

@@ -1,4 +1,3 @@
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:vario/presentation/screens/onboarding_chat_screen/onboarding_chat_screen.dart';
 
@@ -18,13 +17,12 @@ class RouteGenerator {
     }
 
     switch (routingData.route) {
-     
       case OnboardingChatScreen.route:
         return _getPageRoute(OnboardingChatScreen(), settings);
-   
+
       case SwipeScreen.url:
         return _getPageRoute(SwipeScreen(), settings);
-   
+
       default:
         // should display an error screen etc.
         // return kIsWeb ? _getPageRoute(const StartScreen(), settings) : null;

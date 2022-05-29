@@ -83,9 +83,6 @@ enum InteractionType {
   checkbox,
   chips,
   addStocks,
-  //TODO: Instead of specific events like addStocks, this
-  // should just be something like 'button' and
-  // offer the possiblity to pass an onTap callback.
   percentageETF,
   onboardingEnd,
   brokerEnd,
