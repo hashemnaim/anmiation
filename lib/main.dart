@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:intl/date_symbol_data_local.dart';
-import 'package:vario/presentation/screens/onboarding_chat_screen/onboarding_chat_screen.dart';
 import 'package:vario/presentation/screens/onboarding_chat_screen/widgets/cubit/chatscreen_cubit.dart';
 import 'package:vario/presentation/screens/previous_investments_screen/cubit/investments_selection_cubit.dart';
 import 'package:vario/presentation/screens/swipe_screen/swipe_screen.dart';
@@ -28,7 +27,10 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MultiBlocProvider(
       providers: [
-        BlocProvider(create: (context) => SwipeCubit()..fetchNextInvestments(initialLoad: true),),
+        BlocProvider(
+          create: (context) =>
+              SwipeCubit()..fetchNextInvestments(initialLoad: true),
+        ),
         BlocProvider(create: (_) => ChatscreenCubit(getChatStartPairs())),
         BlocProvider(create: (_) => InvestmentsSelectionCubit()),
       ],
@@ -36,7 +38,6 @@ class MyApp extends StatelessWidget {
         title: 'Vario',
         theme: MyStyles.theme,
         initialRoute: SwipeScreen.url,
-        // initialRoute: OnboardingChatScreen.route,
         navigatorKey: locator<NavigationService>().navigationKey,
         onGenerateRoute: RouteGenerator.generateRoute,
       ),
